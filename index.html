@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tali Gankin Portfolio</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+    
+      #homepage {
+        display: block;
+        width: 100%;
+        padding-top: 100px;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+
+      #intro-container {
+        display: block;
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: rgba(241, 221, 207, 0.7);
+
+      }
+
+      .headshot {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        min-width: 250px;
+        margin-right: 15px;
+      }
+
+      .headshot img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        border: 3px solid #F1DDCF;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .intro {
+        display: inline-block;
+        vertical-align: middle;
+        width: 60%;
+        color: #32174d;
+        margin: 20px;
+        font-size: 1em;
+        text-align: left;
+      }
+
+      .intro p {
+        display: inline;
+        line-height: 1.8;
+        font-size: 1.1em;
+        font-weight: 300;
+      }
+
+      .highlight {
+        color: #1F305E;
+        font-weight: 600;
+        display: inline;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #F1DDCF }
+      }
+
+      @media screen and (max-width: 800px) {
+        .headshot, .intro {
+          display: block;
+          width: 90%;
+          margin: 20px auto;
+          text-align: center;
+        }
+
+        .page-title {
+          white-space: normal;
+          border-right: none;
+          animation: none;
+          text-align: center;
+          font-size: 1.2em;
+        }
+        
+        .headshot img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div id="particles-js"></div>
+
+    <div id="nav-bar">
+      <div class="nav-content">
+        <div class="home-icon">
+          <a href="index.html"><img src="imgs/home.png" alt="Home Icon"></a>
+        </div>
+        <div class="nav-links">
+          <h2><a href="work.html">work</a></h2>
+          <h2><a href="about.html">about</a></h2>
+          <h2><a href="contact.html">contact</a></h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="homepage">
+      <h1 class="page-title">Welcome to Tali Gankin's Portfolio</h1>
+      
+      <div id="intro-container">
+        <div class="headshot">
+          <img src="imgs/headshot.png" alt="Tali Gankin Headshot">
+        </div>
+        <div class="intro">
+          <p>
+            I'm a Computer Engineering and Computer Science student at USC passionate about leveraging technology to 
+            <span class="highlight">solve</span> real-world problems through 
+            <span class="highlight">innovation</span>. Outside of engineering, I explore music production and cinematography, 
+            which fuel my creativity and enhance my ability to think across disciplines and design 
+            <span class="highlight">impactful</span>, user-centered solutions.
+          </p>
+        </div>
+      </div>
+      
+      <div id="icons">
+        <a href="https://www.linkedin.com/in/taligankin" target="_blank">
+          <img src="imgs/linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+
+    </div>
+
+
+      <!-- Jqery CDN -->
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+      <script src="particles.js"></script>
+      <script src="app.js"></script>
+
+
+
+
+  </body>
+</html>

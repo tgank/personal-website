@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact portfolio page</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			background-color: #1F305E;
+			background-image: url('imgs/mountains.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: center;
+			color: #F1DDCF;
+			font-family: 'Karla', sans-serif;
+		}
+        
+        h1{
+        	font-family: 'Press Start 2P', sans-serif; 
+        	margin-top: 35px;
+        	margin-bottom: 35px;
+			margin-left: auto;
+			margin-right: auto;
+			color: #1F305E;
+        }
+        
+        #contact-page {
+            display: block;
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-top: 160px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: rgba(241, 221, 207, 0.7);
+            position: relative;
+        }
+        
+        .Comments {
+            margin: 20px 0;
+            text-align: left;
+            position: relative;
+        }
+        .Comments label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1F305E;
+        }
+        .Comments textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            resize: none; 
+        } 
+        
+        #email-field {
+            height: 18px; 
+        }
+        #subject-field {
+            height: 18px; 
+        }
+        #message-field {
+            height: 80px; 
+        }
+        
+        .Buttons {
+            margin-top: 30px;
+        }
+        button {
+            padding: 10px 25px;
+            background-color: #1F305E;
+            color: #F1DDCF;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #2a4180;
+            transform: translateY(-2px);
+        }
+
+        .moving-airplane{
+        	position: absolute;
+            top: 40px;
+            left: 700px;
+        	-webkit-transition:all 1.0s;
+			-ms-transition:all 1.0s;
+			-o-transition:all 1.0s;
+			-moz-transition:all 1.0s;
+			z-index: 10;
+        }
+
+        .airplane {
+        	display: block;
+            width: 200px;
+            height: auto;
+            -webkit-transition:all 1.0s;
+			-ms-transition:all 1.0s;
+			-o-transition:all 1.0s;
+			-moz-transition:all 1.0s;
+        }
+         
+        .moving-airplane:hover .airplane{
+            transform: translate(180px, -180px);
+            opacity: 0;
+        }
+
+        
+
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    
+    <div id="nav-bar">
+      <div class="nav-content">
+        <div class="home-icon">
+          <a href="index.html"><img src="imgs/home.png" alt="Home Icon"></a>
+        </div>
+        <div class="nav-links">
+          <h2><a href="work.html">work</a></h2>
+          <h2><a href="about.html">about</a></h2>
+          <h2><a href="contact.html" class="current-page">contact</a></h2>
+        </div>
+      </div>
+    </div>
+    <div id="contact-page">
+    	<h1>Send me an email!</h1>
+        <div class="Comments">
+            <label for="email-field">Your Email</label>
+            <textarea id="email-field" name="email" placeholder="name@email.com" required></textarea>
+            <div class="moving-airplane">
+            <img src="imgs/airplane.png" alt="Paper airplane" class="airplane">
+            </div>
+        </div>
+        <div class="Comments">
+            <label for="subject-field">Subject</label>
+            <textarea id="subject-field" name="subject" placeholder="Let's Work on a project together"></textarea>
+        </div>
+        <div class="Comments">
+            <label for="message-field" >Message</label>
+            <textarea id="message-field" name="message" placeholder="Hey!..."></textarea>
+        </div>
+        <a href="form_submit.html"><div class="Buttons">
+            <button type="submit">Submit</button>
+        </div></a>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+</body>
+</html>

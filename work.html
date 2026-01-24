@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Work portfolio page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+	<style>
+		html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+		body {
+            background-color: #1F305E;
+            color: #F1DDCF;
+            font-family: 'Karla', sans-serif;
+            text-align: center;
+        }
+        
+		h1 {
+        	font-family: 'Press Start 2P', sans-serif; 
+        	margin-top: 140px;
+        	margin-bottom: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			color: #F1DDCF;
+			z-index: 20;
+            text-align: center;
+        }
+        
+        
+        .work-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+        
+        .project-container {
+            display: block;
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+            text-align: center;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: rgba(241, 221, 207, 0.7);
+            color: #32174d;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-container h3 {
+            margin-top: 0;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.8em;
+            color: #1F305E;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .project-container p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            font-weight: 300;
+            margin-bottom: 0;
+            padding: 0 15px;
+            text-align: justify;
+        }
+        
+        .project-content {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .project-text {
+            display: inline-block;
+            vertical-align: middle;
+            width: 55%;
+            box-sizing: border-box;
+            padding-right: 20px;
+        }
+        
+        .project-image {
+            display: inline-block;
+            vertical-align: middle;
+            width: 40%;
+            text-align: center;
+        }
+        
+        .project-img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 3px solid #F1DDCF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Particles.js styling */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .project-container {
+                width: 90%;
+                padding: 20px;
+            }
+            
+            .project-text, .project-image {
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+            
+            .project-text {
+                margin-bottom: 20px;
+            }
+            
+            .project-img {
+                max-width: 300px;
+                margin: 0 auto;
+                display: block;
+            }
+            
+            .nav-content {
+                height: auto;
+                padding: 10px 0;
+            }
+            
+            .home-icon {
+                position: static;
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+                line-height: normal;
+            }
+            
+            .nav-links {
+                display: block;
+                text-align: center;
+                line-height: normal;
+            }
+            
+            #nav-bar h2 {
+                margin: 0 10px;
+            }
+            
+            h1 {
+                margin-top: 120px;
+                font-size: 1.2em;
+            }
+        }
+	</style>
+</head>
+<body>
+	<div id="particles-js"></div>
+    
+    <div class="content-wrapper">
+        <div id="nav-bar">
+          <div class="nav-content">
+            <div class="home-icon">
+              <a href="index.html"><img src="imgs/home.png" alt="Home Icon"></a>
+            </div>
+            <div class="nav-links">
+              <h2><a href="work.html" class="current-page">work</a></h2>
+              <h2><a href="about.html">about</a></h2>
+              <h2><a href="contact.html">contact</a></h2>
+            </div>
+          </div>
+        </div>
+        
+        <h1>What I've <span class="highlight">work</span>ed on</h1>
+        
+        <div class="work-page">
+            <div class="project-container bike-guard">
+                <h3>The Bike Guard</h3>
+                <div class="project-content">
+                    <div class="project-text">
+                        <p>We saw a major danger facing recreational and commuting bikers so we sought to build a solution. With Bike Guard we aimed at spreading awarness for bikers on the roads. We also created the cool helmet as a prototype for a helmet that would make bikers more visible and help them indicate turn signals.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="imgs/bike_guard.jpg" alt="Biker protection project" class="project-img">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-container third-eye">
+                <h3>The Third Eye</h3>
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="imgs/third_eye.jpg" alt="Third Eye project" class="project-img">
+                    </div>
+                    <div class="project-text">
+                        <p>Initially a solution created to solve possible inconveniences of walking sticks for the blind, The Third Eye turned into an overall awareness increasing solution. We took this solution to the Skills USA competition and won 2nd place!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Work portfolio page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+	<style>
+		html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+		body {
+            background-color: #1F305E;
+            color: #F1DDCF;
+            font-family: 'Karla', sans-serif;
+            text-align: center;
+        }
+        
+		h1 {
+        	font-family: 'Press Start 2P', sans-serif; 
+        	margin-top: 140px;
+        	margin-bottom: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			color: #F1DDCF;
+			z-index: 20;
+            text-align: center;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            text-align: center;
+        }
+        
+        
+        /* Particles.js styling */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        button {
+            padding: 10px 25px;
+            background-color: #F1DDCF;
+            color: #1F305E;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        button:hover {
+            background-color: #2a4180;
+            color: #F1DDCF;
+            transform: translateY(-2px);
+        }
+	</style>
+</head>
+<body>
+	<div id="particles-js"></div>
+    
+    <div class="content-wrapper">
+        <h1>Talk to you soon!</h1>
+
+        <a href="index.html"><div class="Buttons">
+                <button type="return">Return to Home page</button>
+        </div>
+    </div>
+
+        
+        
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
