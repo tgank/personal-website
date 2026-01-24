@@ -80,6 +80,28 @@
         display: inline;
       }
 
+      #social-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
+      }
+
+      .social-icon{
+        width: 42px;
+        height: 42px;     /* force it square */
+        object-fit: contain;
+        display: block;
+      }
+
+      .spotify-mini{
+        width: 320px;
+        height: 80px;
+        border-radius: 12px;
+      }
+
+
       @keyframes typing {
         from { width: 0 }
         to { width: 100% }
@@ -110,6 +132,9 @@
           width: 250px;
           height: 250px;
         }
+
+
+  
       }
 
 
@@ -147,14 +172,24 @@
             which fuel my creativity and enhance my ability to think across disciplines and design 
             <span class="highlight">impactful</span>, user-centered solutions.
           </p>
+          <br><br>
+          <p> <span class="highlight">Connect with me on LinkedIn or check out one of my favorite Spotify playlists below!</span></p>
         </div>
       </div>
       
-      <div id="icons">
+      <div id="social-row">
         <a href="https://www.linkedin.com/in/taligankin" target="_blank">
-          <img src="imgs/linkedin.png" alt="LinkedIn">
+          <img src="imgs/linkedin.png" alt="LinkedIn" class="social-icon">
         </a>
+
+        <iframe class="spotify-mini"
+          src="https://open.spotify.com/embed/playlist/3VlpY6riWYcnZVY65Dws1F?utm_source=generator"
+          frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
       </div>
+
 
     </div>
 
